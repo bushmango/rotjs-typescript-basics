@@ -6,7 +6,8 @@
     "scripts": {
         "build": "webpack",
         "watch": "webpack --watch",
-        "serve": "http-server --port=8085 -c-1"
+        "serve": "http-server --port=8085 -c-1",
+        "dev": "concurrently npm:watch npm:serve"
     },
     "repository": {
         "type": "git",
@@ -20,7 +21,7 @@
     },
     "homepage": "https://github.com/Mizar999/rotjs-typescript-basics#readme",
     "devDependencies": {
-        "concurrently": "^7.2.1",
+        "concurrently": "^7.6.0",
         "http-server": "^14.1.0",
         "rot-js": "^2.0.3",
         "ts-loader": "^9.3.0",
