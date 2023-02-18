@@ -1,5 +1,6 @@
 import * as gamepad from '../input/gamepad'
 import * as monsters from '../monster/monsters'
+import * as mainUi from '../ui/mainUi'
 import { createLogger } from '../util/logger'
 const logger = createLogger('game2')
 
@@ -72,4 +73,6 @@ const draw = () => {
   display.draw(25, 4, '#', '#f00', '#009') /* and background color */
 
   monsters.drawAll()
+
+  mainUi.drawAll()
 }
